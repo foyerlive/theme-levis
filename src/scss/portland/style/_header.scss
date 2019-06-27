@@ -1,0 +1,28 @@
+$logo-dimensions: auto 40% !default;
+$header-background-color: rgb(250, 250, 250) !default;
+$theme-logo: url('../assets/portland/logo.svg') !default;
+.header-component {
+  //box-shadow: $box-shadow;
+  background-color: $header-background-color;
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  line-height: 1.4em;
+  color: #3a405b;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .logo {
+    background-image: $theme-logo;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: $logo-dimensions;
+  }
+  .request-assistance-button {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    span {
+    }
+  }
+}

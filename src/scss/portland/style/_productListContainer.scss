@@ -1,0 +1,13 @@
+$product-list-background-color: transparent !default;
+$product-list-options-background-color: transparent !default;
+.product-list-container {
+  background-color: $product-list-background-color;
+}
+
+.product-list-wrapper {
+  .product-list-options-container {
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    background-color: $product-list-options-background-color;
+  }
+}

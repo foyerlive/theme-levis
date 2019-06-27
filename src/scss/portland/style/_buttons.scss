@@ -1,0 +1,136 @@
+/* Button transitions */
+.button-transition {
+  box-shadow: $box-shadow;
+  transition: box-shadow 100ms, transform 100ms;
+  &.Tappable-active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+}
+
+/* BlueButton */
+.blue-button {
+  @extend .button-transition;
+  font-family: Montserrat-Regular;
+  font-size: 11px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #343e5c;
+  text-transform: uppercase;
+  padding: 0.6rem 2rem;
+  border: 2px solid #343e5c;
+  border-radius: $radius-width;
+  &.disabled {
+    background-color: #ffffff;
+    border: 2px solid #e4e8f0;
+    color: #e4e8f0;
+  }
+}
+
+.babyblue-button {
+  color: #3a405b;
+  border: 2px solid #e4e8f0;
+  border-radius: $border-radius;
+  background-color: white;
+  @extend .button-transition;
+}
+.secondary-button {
+  @extend .button-transition;
+  font-family: Montserrat-Regular;
+  font-size: 11px;
+  color: #343e5c;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 0.6rem 2rem;
+  border: 2px solid #343e5c;
+  border-radius: $radius-width;
+  &.disabled {
+    background-color: #ffffff;
+    border: 2px solid #e4e8f0;
+    color: #e4e8f0;
+  }
+}
+
+/** Add a cart icon */
+.button-cart-icon {
+  padding-left: 4rem !important;
+  &:before {
+    position: absolute;
+    margin-left: -2.2rem;
+    margin-top: -0.25rem;
+    content: '';
+    background-color: currentColor;
+    -webkit-mask: url('../assets/portland/icons/cart.svg') no-repeat center center;
+    //background-image: url('../assets/portland/icons/cart.svg');
+    //background-repeat: no-repeat;
+    //background-position: center center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  &.disabled {
+    color: #e4e8f0;
+  }
+}
+
+/** Add a cart icon */
+.button-text-icon {
+  padding-left: 2rem !important;
+  &:before {
+    position: absolute;
+    margin-left: -2.2rem;
+    content: '';
+    background-color: currentColor;
+    -webkit-mask: url('../assets/portland/icons/text.svg') no-repeat center center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  &.disabled {
+    color: #e4e8f0;
+  }
+}
+
+/* AddToCart */
+.continue-configure {
+  padding-top: 2rem;
+  .button {
+    /* ADD TO CART: */
+    @extend .blue-button;
+    @extend .button-text-icon;
+  }
+  &.cart-enabled {
+    .button {
+      @extend .button-cart-icon;
+    }
+  }
+}
+.order-container {
+  padding: 0;
+  padding-top: 2rem;
+  .order-button-simple {
+    @extend .button-cart-icon;
+    @extend .blue-button;
+  }
+}
+
+.order-button-configure {
+  @extend .blue-button;
+}
+
+.cart-container {
+  .cart-submit-button,
+  .cart-empty-button {
+    @extend .blue-button;
+  }
+  .cart-empty-button {
+    @extend .secondary-button;
+  }
+}

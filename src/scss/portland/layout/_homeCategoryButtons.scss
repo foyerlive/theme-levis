@@ -1,0 +1,14 @@
+.category-list {
+  display: grid;
+  flex-grow: 1;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: $default-gutter;
+  padding: $default-gutter;
+}
+
+@media screen and (orientation: portrait) {
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,28 @@
+.review-item-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column;
+  .review-item-header-wrapper {
+    display: flex;
+    // flex-flow: row;
+    justify-content: space-between;
+    .review-item-rating {
+      // display: flex;
+      .rating-container {
+        display: inline-block;
+      }
+    }
+    .review-item-date {
+      // display: flex;
+    }
+  }
+}
+
+/* The following fixes the hierachy when reviews are within tabs */
+.tab-container {
+  .tab-content {
+    .review-item-container {
+      @extend .review-item-container;
+    }
+  }
+}

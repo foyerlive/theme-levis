@@ -1,0 +1,42 @@
+.product-checkout-container {
+  .configure-cancel {
+    //display: none;
+  }
+
+  .checkout-intro {
+    text-align: left;
+    width: 100%;
+    color: $text-color;
+    //max-width: 40%;
+    font-size: 16px;
+    color: #3A405B;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  .checkout-message {
+    display: none;
+  }
+  .checkout-complete {
+    width: 100%;
+    .checkout-header {
+      text-align: left;
+      font-size: 200%;
+      color: $text-color;
+      font-family: Montserrat-Black;
+      font-size: 32px;
+      color: #1C1E23;
+    }
+    .checkout-message {
+      padding-top: 2rem;
+      display: block;
+      color: $text-color;
+    }
+  }
+  .continue-textmessage {
+    text-align: center;
+    .button {
+      @extend .blue-button;
+      @extend .button-text-icon
+    }
+  }
+}

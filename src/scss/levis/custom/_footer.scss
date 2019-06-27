@@ -1,0 +1,17 @@
+.footer-component {
+  color: $color-text-light;
+
+  .breadcrumbs-container {
+    a {
+      color: $color-text-light;
+      font-family: $base-font-family;
+    }
+  }
+
+  button {
+    span {
+      color: $color-text-light;
+      font-family: $base-font-family;
+    }
+  }
+}

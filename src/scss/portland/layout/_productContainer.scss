@@ -1,0 +1,50 @@
+.product-container-grid {
+  //padding: 2rem;
+  flex-grow: 1;
+  display: grid;
+  height: 100%;
+  padding: 2rem;
+  grid-template-areas: "gallery gap name"
+  "gallery gap price"
+  "gallery gap features"
+  "gallery gap configure"
+  "gallery gap fill";
+  grid-template-rows: auto auto auto auto 1fr;
+  grid-template-columns: 1fr 2rem 1fr;
+
+}
+@media screen and (orientation:portrait) {
+  .product-container-grid {
+    grid-template-areas: "name"
+    "price"
+    "gallery"
+    "features"
+    "configure";
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    .gallery-container {
+      padding-bottom: 100%;
+    }
+  }
+}
+.product-container {
+  .gallery-container {
+    padding-top: 1rem;
+    grid-area: gallery;
+  }
+  .product-name {
+    grid-area: name;
+  }
+  .product-price-container {
+    padding-top: 1rem;
+    grid-area: price;
+  }
+  .product-features {
+    padding-top: 1rem;
+    grid-area: features;
+  }
+  .product-checkout-container, .order-container {
+    padding-top: 1rem;
+    grid-area: configure;
+  }
+}

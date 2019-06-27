@@ -1,0 +1,91 @@
+{
+  "name": "theme-levis-hackathon",
+  "version": "1.2.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "fl-cli --start --port 9082 --theme --packageVariation=levis",
+    "build": "fl-cli --build --theme --config=config/webpack.config.prod.js --packageVariation=levis",
+    "publish": "fl-cli --publish --env=test",
+    "publish:local": "fl-cli --publish --env=local",
+    "publish:production": "fl-cli --publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foyerlive/transact-theme-kitchenwarehouse.git"
+  },
+  "keywords": [
+    "loblaws"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foyerlive/transact-theme-loblaws/issues"
+  },
+  "homepage": "https://github.com/foyerlive/transact-theme-loblaws#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "application-base-react": "github:foyerlive/application-base-react",
+    "counterpoint-api": "github:foyerlive/counterpoint-api",
+    "debug": "^3.1.0",
+    "fl-cli": "github:foyerlive/fl-cli",
+    "material-ui": "1.0.0-beta.36",
+    "node-sass": "^4.12.0",
+    "npm": "^5.10.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-qr-svg": "^2.2.1",
+    "react-router": "^3.2.1",
+    "react-tappable": "^1.0.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "jsx-control-statements",
+      "syntax-async-functions",
+      "transform-regenerator"
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          "react-hmre"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
+      "strict": [
+        2,
+        "never"
+      ],
+      "react/jsx-uses-react": 2,
+      "react/jsx-uses-vars": 2,
+      "react/react-in-jsx-scope": 2
+    },
+    "plugins": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.5",
+    "webpack-bundle-analyzer": "^2.13.1"
+  }
+}

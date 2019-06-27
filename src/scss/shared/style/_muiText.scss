@@ -1,0 +1,92 @@
+$product-list-item-price-color: $bodyalt-color;
+$inline-filters-label-color: $caption-color;
+/*
+This will enable standard text options for various features
+
+Category Header and Product Name Header, are headlines...
+Product List -> Product Name = Subheading
+Product List -> Price = BodyAlt
+
+Filter -> Label = Caption
+
+*/
+.product-container {
+  .product-name {
+    @extend .text-headline;
+  }
+  .product-price-previous {
+  }
+  .product-price {
+  }
+  .product-features {
+    // color: orange;
+    @extend .text-body;
+  }
+}
+
+.category-list {
+  .mui-category-button {
+    span {
+      &:first-child {
+        @extend .text-headline;
+      }
+    }
+  }
+}
+
+.category-container {
+  .category-header-container {
+    h1 {
+      @extend .text-headline;
+    }
+  }
+}
+.product-list-container {
+  .product-list-item {
+    .product-name {
+      @extend .text-subheading;
+      // color: red;;
+    }
+    .product-price {
+      @extend .text-bodyalt;
+    }
+  }
+}
+.product-list-wrapper {
+  .inline-filters-container,
+  .ordering-container {
+    .inline-filter-label,
+    .ordering-order-label {
+      @extend .text-caption;
+    }
+  }
+}
+.cart-intro {
+  h2 {
+    @extend .text-headline;
+  }
+}
+.cart-items {
+  .cart-item-container {
+    .product-description {
+      .cart-item-product-name-simple {
+        @extend .text-title;
+      }
+    }
+    .cart-item-product-price {
+      .price-value {
+        @extend .text-body;
+      }
+    }
+    .cart-item-total-price {
+      .price-value {
+        @extend .text-bodyalt;
+      }
+    }
+  }
+}
+.cart-keypad-intro {
+  p {
+    @extend .text-body;
+  }
+}

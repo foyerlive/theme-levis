@@ -1,0 +1,35 @@
+$radius-width: 250px;
+.selectors-container {
+  display: flex;
+  flex-flow: $selector-format;
+  @if $selector-format == column {
+    align-items: flex-start;
+  }
+  .selector-node {
+    @if $selector-format == column {
+      align-items: flex-start;
+      padding-bottom: 1rem;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    @if $selector-format == row {
+      padding-right: 2rem;
+    }
+    .selector-container {
+      display: flex;
+      flex-flow: column;
+      .selector-options {
+        .selector-option {
+          margin: 0;
+          &:first-child {
+          }
+          &:last-child {
+          }
+          &.selector-option-active {
+          }
+        }
+      }
+    }
+  }
+}

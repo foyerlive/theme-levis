@@ -1,0 +1,40 @@
+$product-container-name-font-family: $headline-font-family !default;
+$product-name-color: #1c1e23 !default;
+.product-container {
+  .product-name {
+    line-height: 150%;
+    font-family: $product-container-name-font-family;
+    //font-size: 32px;
+    color: $product-name-color;
+    letter-spacing: 0;
+  }
+  .product-price-previous {
+    /* £59.99: */
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: #b8bfd3;
+    letter-spacing: 0;
+    text-decoration: line-through;
+    // &:before {
+    //   content: "$";
+    // }
+    padding-right: 1rem;
+  }
+  .product-price {
+    /* £29.99: */
+    font-family: Montserrat-Regular;
+    //font-size: 18px;
+    color: $text-color;
+    letter-spacing: 0;
+    // &:before {
+    //   content: "$";
+    // }
+  }
+  .product-features {
+    //font-family: .SFNSText;
+    font-size: 20px;
+    color: $text-color;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+}

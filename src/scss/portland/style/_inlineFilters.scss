@@ -1,0 +1,50 @@
+$inline-filters-label-color: #b8bfd3 !default;
+
+.inline-filters-container {
+  .inline-filter-label {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: Montserrat-Regular;
+    font-size: 11px;
+    color: $inline-filters-label-color;
+    letter-spacing: 1px;
+    padding-right: 1rem;
+  }
+}
+
+/* Auto Grow Select boxes */
+.Select-menu-outer {
+  max-height: initial; // Auto-grow
+  .Select-menu {
+    max-height: initial; // Auto-grow
+  }
+}
+
+// .react-select-container {
+//   background: #004d73;
+//   font-family: Avalon;
+//   .react-select__control {
+//     border: 1px solid #0082c3;
+//     border-radius: 0;
+//     background-color: #004d73;
+//     min-height: 54px;
+//     .react-select__value-container {
+//       .react-select__placeholder {
+//         // color: #9898bb;
+//       }
+//       .react-select__single-value {
+//         color: white;
+//         font-weight: bold;
+//         font-size: 15px;
+//       }
+//     }
+//   }
+//   .react-select__indicators {
+//     .react-select__indicator-separator {
+//       display: none;
+//     }
+//     .react-select__indicator {
+//       color: white;
+//     }
+//   }
+// }

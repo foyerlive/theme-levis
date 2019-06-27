@@ -1,0 +1,133 @@
+.cart-container {
+  display: flex;
+  flex-flow: row;
+  //flex-shrink: 0;
+  //justify-content: center;
+  //justify-items: flex-start;
+  //align-content: center;
+  align-items: center;
+  .cart-items {
+    flex-shrink: 0;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+    //flex-grow: 1;
+  }
+  .cart-checkout-container {
+    flex-shrink: 0;
+    //border: 1px solid red;
+    padding: 0;
+    width: 50vw;
+    //display: flex;
+  }
+}
+@media screen and (orientation: portrait) {
+  .cart-container {
+    display: flex;
+    flex-flow: column;
+    //justify-content: stretch;
+    //flex-shrink: 0;
+    .cart-items {
+      width: 75%;
+    }
+    .cart-checkout-container {
+      width: 100%;
+    }
+  }
+}
+
+/* Hide the cart checkout when cart is empty */
+.cart-empty .cart-checkout-container {
+  display: none;
+}
+
+.cart-checkout-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  //align-content: center;
+  //justify-content: center;
+  .keypad-component {
+    order: 0;
+    width: 35%;
+  }
+  .cart-submit-button {
+    order: 1;
+    width: 28%;
+  }
+  .cart-empty-button {
+    margin-top: 2rem;
+    order: 2;
+  }
+}
+
+/* Cart Items */
+.cart-items {
+  width: 75%;
+  .cart-item-container {
+    padding: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    .cart-item-image-container {
+      min-width: 150px;
+      max-width: 150px;
+      .cart-product-image {
+        div {
+          background-color: white;
+        }
+      }
+    }
+    .product-description {
+      width: 50%;
+    }
+    .cart-item-product-price {
+      width: 10%;
+    }
+    .quantity-container {
+      width: 13%;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      .cart-item-button-increase-qty {
+        margin-left: 0;
+      }
+    }
+    .cart-item-total-price {
+      width: 15%;
+    }
+  }
+}
+
+.cart-failed-container {
+  margin: auto;
+  width: 75%;
+}
+
+@media screen and (orientation: portrait) {
+  .cart-items {
+    //padding-top: 3rem;
+  }
+  .cart-checkout-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    .keypad-component {
+      order: 0;
+      width: 31%;
+    }
+    .cart-submit-button {
+      width: 25%;
+    }
+  }
+}
+.art-preview-animation { /* Fixes issue where cart preview is floating over cart */
+  display: none;
+}
+.cart-preview-items {
+  //display: none;
+}

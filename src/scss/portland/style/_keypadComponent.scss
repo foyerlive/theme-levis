@@ -1,0 +1,15 @@
+.keypad-component {
+  .keypad-phone-input {
+    border: 2px solid #E4E8F0;
+    border-radius: $border-radius;
+    font-size: 2rem;
+    color: $text-color;
+  }
+  .keypad-wrapper {
+    .keypad-container {
+      .button {
+        @extend .babyblue-button;
+      }
+    }
+  }
+}

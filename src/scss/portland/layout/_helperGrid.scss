@@ -1,0 +1,37 @@
+.grid-row-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  > div {
+    &:nth-child(1) {
+      display: flex;
+      flex-flow: row;
+    }
+    &:nth-child(2) {
+      width: 100%;
+    }
+    &:nth-child(3) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.grid-row-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  > div {
+    &:nth-child(1) {
+      display: flex;
+      flex-flow: row;
+    }
+    &:nth-child(2) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.grid-row-flex {
+  display: flex;
+  flex-flow: row;
+}

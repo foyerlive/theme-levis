@@ -1,0 +1,8 @@
+.form-field-row {
+  display: flex;
+  flex-flow: row;
+}
+.form-field-smart-container {
+  flex-grow: 1;
+  padding-bottom: 0 !important;
+}

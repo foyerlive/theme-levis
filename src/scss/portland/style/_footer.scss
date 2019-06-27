@@ -1,0 +1,24 @@
+$footer-background-color: rgb(250,250,250) !default;
+
+.footer-component {
+  background-color: $footer-background-color;
+  font-family: Montserrat-Regular;
+  font-size: 11px;
+  color: #3A405B;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  .breadcrumbs-container {
+    .button {
+      text-transform: uppercase;
+    }
+  }
+  button {
+    span {
+      font-family: Montserrat-Regular;
+      font-size: 11px;
+      color: #3A405B;
+    }
+  }
+  .locale-selector {
+  }
+}

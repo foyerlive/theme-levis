@@ -1,0 +1,15 @@
+$category-header-font-family: $headline-font-family !default;
+$category-header-color: $header-color !default;
+
+.category-header-container {
+  border-radius: $border-radius;
+  //box-shadow: $box-shadow;
+  h1 {
+    font-family: $category-header-font-family;
+    font-size: 42px;
+    color: $category-header-color;
+    letter-spacing: 0;
+    text-align: left;
+    padding: calc( #{$product-list-margin} * 2)
+  }
+}

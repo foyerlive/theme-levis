@@ -1,0 +1,106 @@
+/* Hide the cart checkout when cart is empty */
+.cart-empty .cart-checkout-container {
+  display: none;
+}
+
+.cart-checkout-container {
+}
+
+.cart-items {
+  .cart-item-container {
+    background-color: white;
+    border-bottom: 1px solid #F0F2F7;
+    &:first-child {
+      border-top: 1px solid #F0F2F7;
+    }
+    .product-description {
+      padding-left: 1rem;
+      .cart-item-variation-name-part {
+        padding-right: 1rem;
+        .option-label {
+          font-family: Montserrat-Regular;
+          font-size: 11px;
+          color: #B8BFD3;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        .option-value {
+          font-family: Montserrat-Regular;
+          font-size: 11px;
+          letter-spacing: 1px;
+          color: #1C1E23;
+          &:before {
+            content: " ";
+          }
+        }
+      }
+    }
+    .cart-item-product-name-simple {
+      font-family: Montserrat-Regular;
+      font-size: 16px;
+      color: #1C1E23;
+      letter-spacing: 0;
+    }
+    .cart-item-product-price {
+      padding-right: 2rem;
+      text-align: right;
+      /* £7.99: */
+      font-family: Montserrat-Regular;
+      font-size: 12px;
+      color: #1C1E23;
+      letter-spacing: 0;
+    }
+    .quantity-container {
+      border: 2px solid #F0F2F7;
+      border-radius: 20px;
+      line-height: 30px;
+      text-align: center;
+      .cart-item-button-decrease-qty {
+        /* –: */
+        opacity: 0.3;
+        font-family: Montserrat-Regular;
+        font-size: 20px;
+        color: #B8BFD3;
+        letter-spacing: 0;
+        padding: 0 1rem;
+      }
+      .cart-item-quantity-raw {
+        /* 1: */
+        font-family: Montserrat-Regular;
+        font-size: 12px;
+        color: #3A405B;
+        letter-spacing: 0;
+        padding: 0 0.5rem;
+      }
+      .cart-item-button-increase-qty {
+        /* +: */
+        font-family: Montserrat-Regular;
+        font-size: 20px;
+        color: #B8BFD3;
+        letter-spacing: 0;
+        padding: 0 1rem;
+      }
+    }
+    .cart-item-total-price {
+      text-align: right;
+      /* £9.99: */
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+      color: #1C1E23;
+      letter-spacing: 0;
+    }
+  }
+}
+
+.cart-failed-container {
+  padding-top: 4rem;
+  text-align: center;
+  /* Congrats! Your Order: */
+  h1 {
+    font-family: Montserrat-Black;
+    font-size: 32px;
+    color: #1C1E23;
+    letter-spacing: 0;
+  }
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+.header-component {
+  &.grid-row-three {
+    div:first-child {
+      align-items: center;
+    }
+  }
+  .logo {
+    background-size: auto 70%;
+    background-position: center top;
+  }
+
+  .action-button-back {
+    span:first-child {
+      justify-content: flex-start;
+    }
+  }
+
+  .index-button-search {
+    margin-right: 16px;
+  }
+
+  .index-button-cart {
+    margin-left: 16px;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      border: 0px solid $background-color-main;
+      border-radius: 50%;
+      background-color: $background-color-main;
+    }
+
+    .item-count {
+      position: absolute;
+      top: 23px;
+      right: 14px;
+      background-color: $color-maroon-levis;
+      border: 1px solid $color-maroon-levis;
+      border-radius: 50%;
+      text-align: center;
+      color: $color-light;
+      padding: 2px 7px;
+      font-family: $base-font-family-bold;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}

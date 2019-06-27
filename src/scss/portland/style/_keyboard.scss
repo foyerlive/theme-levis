@@ -1,0 +1,31 @@
+$color-background-keyboard-container: white !default;
+$color-background-keyboard: black !default;
+$color-background-key-normal: black !default;
+$color-key-border-color: black !default;
+$color-background-key-highlight: $color-highlight !default;
+$color-key-color: white !default;
+$color-key-color-highlight: $color-key-border-color !default;
+$keyboard-key-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.34) !default;
+
+.keyboard-container {
+  background-color: $color-background-keyboard;
+}
+.keyboard-wrapper {
+  background-color: $color-background-keyboard-container;
+}
+.keyboard-row .key,
+.RVK_keyboard_dark {
+  background-color: $color-background-key-normal;
+  border: 1px solid $color-key-border-color;
+  font-size: 20px;
+  color: $color-key-color;
+  box-shadow: $keyboard-key-box-shadow;
+  &:active,
+  &:focus {
+    background-color: $color-background-key-highlight;
+    color: $color-key-color-highlight;
+  }
+}
+.RVK_keyboard_keyActive {
+  background-color: $color-background-key-highlight;
+}

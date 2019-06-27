@@ -1,0 +1,32 @@
+.category-buttons-container {
+  display: flex;
+  background-color: $color-light;
+  flex-wrap: wrap;
+  height: auto;
+
+  .category-button {
+    flex: 1;
+    flex-basis: 25%;
+    margin: 1rem;
+    background-color: $color-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 34vh;
+    font-size: 23px;
+    line-height: 30px;
+    font-family: $base-font-family-medium;
+    text-transform: uppercase;
+
+    @media screen and (orientation: portrait) {
+      padding-top: 34vw;
+    }
+  }
+}
+
+.product-list--no-results {
+  h2 {
+    font-family: $base-font-family-medium;
+    color: $text-color;
+  }
+}

@@ -1,0 +1,10 @@
+.keypad-component {
+  width: 19%;
+  .keypad-phone-input {
+  }
+}
+@media screen and (orientation: portrait) {
+  .keypad-component {
+    width: 35%;
+  }
+}

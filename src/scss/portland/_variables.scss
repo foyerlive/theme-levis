@@ -1,0 +1,79 @@
+/* Product Page Options */
+
+$selector-format: column !default; // Can switch to column
+
+$product-list-columns: 5 !default; // Number of columns in product list
+$product-list-margin: 2rem !default; // Distance between each item and around the items
+$product-list-image-height: 120% !default; // 100% = square...
+$product-list-image-size: contain !default;
+
+$default-gutter: $product-list-margin !default;
+
+$border-radius: 6px !default;
+
+$box-shadow: 0 3px 8px 0 rgba(34, 35, 40, 0.2) !default;
+$text-shadow: 3px 2px rgba(34, 35, 40, 0.2) !default;
+
+$color-highlight: #3a405b !default;
+$text-color: #3a405b !default;
+$header-color: #3a405b !default;
+
+/** Overall Style **/
+$background-color-main: #ffffff !default;
+$background-color-viewport: $background-color-main !default;
+$background-color-header: rgb(250, 250, 250) !default;
+$background-color-footer: rgb(250, 250, 250) !default;
+$background-color-alt: #ffffff !default;
+
+/** Typography **/
+$font-scale: 9 !default;
+$scale: $font-scale !default;
+
+$base-font-family: 'Montserrat-Regular', 'Courier' !default; // Default for all
+$base-font-style: normal !default;
+$base-font-size: calc(1rem / #{$scale} * 9) !default;
+$base-font-weight: inherit !default;
+$base-line-height: calc(1rem / #{$scale} * 12) !default;
+$base-color: inherit !default;
+
+$headline-font-family: $base-font-family !default; // Headings
+$headline-font-style: $base-font-style !default;
+$headline-font-size: calc(1rem / #{$scale} * 24) !default;
+$headline-font-weight: $base-font-weight !default;
+$headline-line-height: calc(1rem / #{$scale} * 32) !default;
+$headline-color: $base-color !default;
+
+$title-font-family: $base-font-family !default; // Titles
+$title-font-style: $base-font-style !default;
+$title-font-size: calc(1rem / #{$scale} * 13) !default;
+$title-font-weight: $base-font-weight !default;
+$title-line-height: calc(1rem / #{$scale} * 16) !default;
+$title-color: $base-color !default;
+
+$subheading-font-family: $base-font-family !default; // Subheading
+$subheading-font-style: $base-font-style !default;
+$subheading-font-size: calc(1rem / #{$scale} * 11) !default;
+$subheading-font-weight: $base-font-weight !default;
+$subheading-line-height: calc(1rem / #{$scale} * 24) !default;
+$subheading-color: $base-color !default;
+
+$body-font-family: $base-font-family !default; // Main text...
+$body-font-style: $base-font-style !default;
+$body-font-size: calc(1rem / #{$scale} * 11) !default;
+$body-font-weight: $base-font-weight !default;
+$body-line-height: calc(1rem / #{$scale} * 24) !default;
+$body-color: $base-color !default;
+
+$bodyalt-font-family: $base-font-family !default; // Alt Main text...
+$bodyalt-font-style: $base-font-style !default;
+$bodyalt-font-size: calc(1rem / #{$scale} * 11) !default;
+$bodyalt-font-weight: $base-font-weight !default;
+$bodyalt-line-height: calc(1rem / #{$scale} * 24) !default;
+$bodyalt-color: $base-color !default;
+
+$caption-font-family: $base-font-family !default; // Captions...
+$caption-font-style: $base-font-style !default;
+$caption-font-size: calc(1rem / #{$scale} * 11) !default;
+$caption-font-weight: $base-font-weight !default;
+$caption-line-height: calc(1rem / #{$scale} * 24) !default;
+$caption-color: $base-color !default;

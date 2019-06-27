@@ -1,0 +1,104 @@
+.header-component .logo {
+  background-image: url('../assets/portland/logo.svg') !important;
+}
+.cart-checkout-actions {
+  display: flex;
+  flex-flow: column;
+  min-width: 336px;
+  //   justify-content: center;
+  //   align-content: center;
+  // align-items: stretch;
+  div,
+  .cart-submit-button {
+    box-sizing: border-box;
+    // display: flex;
+    width: 100%;
+  }
+}
+
+/* basic titles */
+.product-list-options-result-count {
+  display: none;
+}
+.category-container {
+  .category-header-container {
+    padding-bottom: 0;
+  }
+}
+.category-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 16px;
+  padding-top: 16px;
+  .mui-category-button {
+    margin-left: 16px;
+    margin-top: 16px;
+    flex-basis: calc(50% - 16px);
+    min-height: 140px;
+    flex-shrink: 0;
+    span {
+      &:first-child {
+        width: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-transform: none;
+        color: black;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .account-container {
+    max-width: 50vw;
+    margin: auto;
+    form {
+      .form-field {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-header-container {
+    padding-bottom: 2%;
+  }
+  .cart-container {
+    display: grid !important;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: repeat(2, 1fr);
+    div {
+      // align-self: flex-end;
+    }
+    .cart-items {
+      align-self: flex-start;
+    }
+    .cart-checkout-container {
+      align-self: flex-start;
+    }
+    .cart-intro {
+      margin-top: 2rem;
+      h2,
+      p {
+        text-align: center;
+      }
+      &:first-child {
+        // background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      &:nth-child(3) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        // background-color: red;
+      }
+    }
+  }
+}

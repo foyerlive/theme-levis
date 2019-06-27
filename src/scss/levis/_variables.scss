@@ -1,0 +1,27 @@
+$color-dark: #2A2B2C;
+$color-light: #FFFFFF;
+$color-mild-light: #F3F3F3;
+$color-text-light: #AABDB9;
+$color-light-gray: #ACB3B8;
+$color-mild-gray: #ADB3B7;
+$color-maroon-levis: #B42B35;
+$color-ex-light-gray: #DBDBDB;
+
+$background-color-main: #F8F8F8;
+$background-color-viewport: $background-color-main;
+$background-color-header: $color-light;
+$header-background-color: $color-light;
+$background-color-footer: #1F1F1F;
+$footer-background-color: $background-color-footer;
+
+$text-color: $color-dark;
+$base-font-family: 'Roboto Regular', 'Montserrat-Regular', 'Courier';
+$base-font-family-light: 'Roboto Light', 'Montserrat-Regular', 'Courier';
+$base-font-family-medium: 'Roboto Medium', 'Montserrat-Regular', 'Courier';
+$base-font-family-bold: 'Roboto Bold', 'Montserrat-Regular', 'Courier';
+
+$product-list-columns: 4; // minus 1 for portrait
+$product-list-item-name-font-family: $base-font-family-bold;
+$product-list-item-name-font-size: 20px;
+$product-list-item-name-line-height: 30px;
+$product-list-item-name-font-weight: bold;

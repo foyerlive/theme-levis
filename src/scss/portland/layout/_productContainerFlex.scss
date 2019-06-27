@@ -1,0 +1,15 @@
+.product-container-flex {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  .container-left {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column;
+  }
+  .container-right {
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column;
+  }
+}

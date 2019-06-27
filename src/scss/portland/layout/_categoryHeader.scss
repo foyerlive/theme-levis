@@ -1,0 +1,8 @@
+$category-header-padding-bottom: 30% !default;
+
+.category-header-container {
+  margin: $product-list-margin;
+  padding-bottom: $category-header-padding-bottom;
+  background-size: cover;
+  background-position: center center;
+}

@@ -1,0 +1,9 @@
+.category-buttons-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  .category-button {
+    padding: 1rem 1rem;
+    flex-basis: auto;
+  }
+}

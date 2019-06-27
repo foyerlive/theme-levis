@@ -1,0 +1,25 @@
+.product-list-container {
+  align-items: normal; // Extra important to have grid style where boxes have the same height...
+}
+
+.product-list-wrapper {
+  //display: grid;
+  //grid-template-columns: repeat(2, 1fr);
+
+  .product-list-options-container {
+    flex-shrink: 0; // Needs to hold its ground...
+    //background-color: red;
+    display: flex;
+    flex-flow: row;
+
+    //justify-content: center;
+
+    margin: 0 $default-gutter;
+
+  }
+  //.product-list-container {
+  //  grid-column-start: 1;
+  //  grid-column-end: 3;
+  //  padding-top: 0;
+  //}
+}

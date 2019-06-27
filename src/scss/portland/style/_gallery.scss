@@ -1,0 +1,22 @@
+.gallery-container {
+  .gallery-images {
+  }
+  .gallery-pagination {
+  }
+  .gallery-navigation {
+
+  }
+  .gallery-previews {
+    .gallery-preview-item {
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      &.gallery-preview-item-active {
+        z-index: 1;
+        box-shadow: 0 10px 20px 0 rgba(28,30,35,0.40);
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

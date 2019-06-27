@@ -1,0 +1,49 @@
+$review-rating-color-highlight: $color-highlight !default;
+$review-rating-color-base: $background-color-alt !default;
+
+.rating-container {
+  font-size: 1.8rem;
+  .rating-cover {
+    color: $review-rating-color-highlight;
+  }
+  .rating-base {
+    color: $review-rating-color-base;
+  }
+}
+
+.review-item-container {
+  color: $text-color;
+  @extend .text-base;
+  .rating-container {
+    font-size: 1.5rem;
+  }
+
+  .review-item-title-wrapper,
+  .review-item-info-wrapper,
+  .review-item-body-wrapper,
+  .review-item-footer-wrapper {
+    padding-top: 0.5rem;
+  }
+  .review-item-title {
+    @extend .text-subheading;
+  }
+  .review-item-date {
+    @extend .text-bodyalt;
+  }
+  .review-item-name {
+    color: $color-highlight;
+    font-weight: 600;
+    display: block;
+  }
+  .review-item-location {
+    @extend .text-bodyalt;
+    &:before {
+      content: 'From: ';
+      font-weight: 600;
+    }
+  }
+  .review-item-recommended {
+    font-weight: 600;
+    color: $color-highlight;
+  }
+}

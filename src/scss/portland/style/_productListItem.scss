@@ -1,0 +1,37 @@
+$product-list-item-background-color: #FFFFFF !default;
+
+$product-list-item-name-font-family: $title-font-family !default;
+$product-list-item-name-font-style: $title-font-style !default;
+$product-list-item-name-font-size: $title-font-size !default;
+$product-list-item-name-line-height: $title-line-height !default;
+
+$product-list-item-name-color: #1C1E23 !default;
+$product-list-item-price-color: #3A405B !default;
+
+.product-list-item {
+  background: $product-list-item-background-color;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  text-align: center;
+  transition: box-shadow 100ms, transform 100ms;
+  &.Tappable-active {
+    transform:translateY(2px);
+    box-shadow: 0 1px 2px 0 rgba(34, 35, 40, 0.20);
+  }
+  .product-name {
+    font-family: $product-list-item-name-font-family;
+    font-style: $product-list-item-name-font-style;
+    font-size: $product-list-item-name-font-size;
+    line-height: $product-list-item-name-line-height;
+    color: $product-list-item-name-color;
+    font-weight: 400;
+    padding: 1rem 1rem 0.25rem 1rem;
+  }
+  .product-price-container-full {
+    padding: 0.25rem 1rem 1rem 1rem;
+    .product-price {
+      //font-size: 14px;
+      color: $product-list-item-price-color;
+    }
+  }
+}
