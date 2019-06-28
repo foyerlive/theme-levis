@@ -4,22 +4,6 @@ import RelatedProducts from './components/RelatedProducts'
 import ReviewCount from './components/ReviewCount'
 import ReviewsContainer from './components/ReviewsContainer'
 
-
-const ReviewsIf = props => {
-  const product = props['data-rdl'].product;
-
-  if (true) {
-    return (
-      <div className="product-features-container">
-        <h5>Reviews</h5>
-        <ReviewsContainer product={product} />
-      </div>
-    );
-  }
-  // console.debug('reviewsIf', props);
-  return null;
-};
-
 export const ReviewItem = {
   children: [
     {
@@ -74,7 +58,7 @@ export default {
             'features',
           ],
         },
-        <ReviewsIf />,
+        <ReviewsContainer />,
       ],
     },
     {
