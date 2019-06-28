@@ -42,7 +42,7 @@ export default {
     'cart',
     {
       node: 'footer',
-      children: ['breadcrumbs', 'wheelchairButton'],
+      children: ['breadcrumbs'],
     },
   ],
 }

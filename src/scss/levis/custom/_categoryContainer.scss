@@ -24,6 +24,14 @@
   }
 }
 
+.category-header-container {
+  display: none;
+}
+
+.category-buttons-wrapper {
+  display: none;
+}
+
 .product-list--no-results {
   h2 {
     font-family: $base-font-family-medium;
