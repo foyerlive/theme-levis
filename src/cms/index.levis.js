@@ -38,7 +38,7 @@ let cms = {
   browseHideHeader: true,
   browseHideCategoryButtons: true,
   cartEnabled: true,
-  autoConfigure: true,
+  autoConfigure: false,
 
   indexContainerStructure: viewPort,
   homeContainerStructure: homeContainer,

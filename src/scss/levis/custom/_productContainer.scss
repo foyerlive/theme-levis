@@ -126,8 +126,6 @@
 
   .order-container, .cart-enabled {
     padding: 1rem 0;
-    position: fixed;
-    bottom: 3rem;
     display: flex;
     background: $color-light;
     width: 100%;
@@ -163,8 +161,15 @@
     }
   }
 
+  .order-container, .product-checkout-container {
+    position: fixed;
+    bottom: 3rem;
+    width: 100%;
+  }
+
   .product-checkout-container {
     font-family: $base-font-family;
+    padding-bottom: 0;
 
     .selectors-container {
       padding: 2rem;
