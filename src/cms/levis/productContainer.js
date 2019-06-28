@@ -1,15 +1,18 @@
 import React from 'react'
 
 import RelatedProducts from './components/RelatedProducts'
+import ReviewCount from './components/ReviewCount'
+import ReviewsContainer from './components/ReviewsContainer'
+
 
 const ReviewsIf = props => {
-  const reviews = props['data-rdl'].reviews;
-  // console.debug('reviewsIf', reviews, props);
-  if (reviews) {
+  const product = props['data-rdl'].product;
+
+  if (true) {
     return (
       <div className="product-features-container">
         <h5>Reviews</h5>
-        {reviews}
+        <ReviewsContainer product={product} />
       </div>
     );
   }
@@ -60,7 +63,7 @@ export default {
             },
             {
               className: 'product-rating-container',
-              children: ['rating', 'reviewsCount'],
+              children: [<ReviewCount />],
             },
           ],
         },
