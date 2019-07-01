@@ -1,6 +1,6 @@
 {
   "name": "theme-levis-hackathon",
-  "version": "1.2.2.3",
+  "version": "1.2.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
