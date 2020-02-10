@@ -6,6 +6,18 @@
   grid-gap: $default-gutter;
   padding: $default-gutter;
 
+  .category-accessories {
+    background-image: url('./levis/assets/image1.jpeg');
+  }
+
+  .category-clothing {
+    background-image: url('https://lsco.scene7.com/is/image/lsco/19_JUNE_HP_A2_Shorts_Desktop?$ZF$&wid=1440');
+  }
+
+  .category-shoes {
+    background-image: url('https://lsco.scene7.com/is/image/lsco/19_JUN_HP_A2_D0_NAtext_Desktop?$ZF$&wid=1440');
+  }
+
   button{
     height: 45vh;
     margin-bottom: 5rem;
@@ -36,7 +48,7 @@
   }
 }
 
-.category-buttons-container{
+.category-buttons-container {
   .category-button {
     background-image: url('./levis/assets/image.png');
   }
